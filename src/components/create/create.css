@@ -1,0 +1,71 @@
+
+.create-wrapper{
+    position: fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.63);
+    text-align: center;
+    z-index: 10000;
+}
+
+.create-title{
+    background: rgb(153, 147, 147);
+    position: absolute;
+    width:50%;
+    top:40%;
+    left:50%;
+    transform: translateX(-50%);
+    }
+
+.Cform{
+    border: 1px solid;
+    text-align: center;
+    width: 60%;
+    height: 70vh;
+    margin: auto;
+    transform: translateY(10%);
+}
+
+.addBox{
+    position: absolute;
+    width:30%;
+    height: 100vh;
+    background: rgb(153, 147, 147);
+    animation-duration : 1s;
+}
+
+.show{
+    animation-name : show;
+
+}
+
+.hide {
+    animation-name: hide;
+    transform: translateX(-100%);
+
+
+}
+
+.addBox-close{
+    float: right;
+}
+
+@keyframes show{
+    from{
+        transform: translateX(-100%);
+        
+    }
+    to{
+        transform: translateX(0%)
+    }
+}
+
+@keyframes hide{
+    from{
+        transform: translateX(0%);
+        
+    }
+    to{
+        transform: translateX(-100%)
+    }
+}
